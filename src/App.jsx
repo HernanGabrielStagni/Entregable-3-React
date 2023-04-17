@@ -5,25 +5,27 @@ import ResidentCard from './components/ResidentCard'
 import useFetch from './hooks/useFetch'
 import getRandonLocation from './utils/getRandonLocation'
 import {useRef} from 'react'
+import { useState } from 'react'
+
 const App = () => {
 
-const get= getRandonLocation()
-const url=`https://rickandmortyapi.com/api/location/${get}`
+const [inputValue, setInputValue] = useState(getRandonLocation())
+const url=`https://rickandmortyapi.com/api/location/${inputValue}`
 const location=useFetch(url)
-// console.log(location) 
+const inputLocation=useRef()
+console.log(inputValue)
+
 
 const handleSubmit=(event)=>{
   event.preventDefault()
-  // console.log(event.preventDefault.current.value)
+  setInputValue(inputLocation.current.value)
 }
-const inputLocation=useRef()
-
   return (
     <div className="App">
         <h1>Rick and Morty</h1>
 
         <form onSubmit={handleSubmit}>
-            <input  type="text" />
+            <input ref={inputLocation} type="text" />
             <button>Search</button>
           </form>
 

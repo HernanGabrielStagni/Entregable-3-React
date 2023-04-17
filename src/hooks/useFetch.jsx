@@ -12,7 +12,7 @@ const useFetch = (url) =>{
        .catch(err => console.log(err))
         
     
-    }, [])
+    }, [url])
 
     return state //retorno el estado
 }

@@ -7,7 +7,7 @@ import useFetch from '../hooks/useFetch'
 
 const ResidentCard = ({ url }) => {
  const resident=useFetch(url) //guardo en resident lo que me traiga la peticion
- console.log(resident)
+//  console.log(resident)
  
  return (
    <article>
@@ -23,7 +23,7 @@ const ResidentCard = ({ url }) => {
     <section>
             <h3>{resident?.name}</h3>
             <hr /> {/* linea horizontal rule */}
-            
+
  
                <ul>
                 <li><span>Specie </span>{resident?.species}</li>
