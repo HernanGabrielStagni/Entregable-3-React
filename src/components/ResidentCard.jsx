@@ -6,7 +6,7 @@ import useFetch from '../hooks/useFetch'
 
 
 const ResidentCard = ({ url }) => {
- const resident=useFetch(url) //guardo en resident lo que me traiga la peticion
+ const [resident]=useFetch(url) //guardo en resident lo que me traiga la peticion y lo destructuro porque ahora me llega un arreglo, pero necesito solo este dato
 //  console.log(resident)
  
  return (

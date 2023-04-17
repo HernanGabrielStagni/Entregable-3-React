@@ -1,6 +1,7 @@
 
 import './App.css'
 import LocationInfo from './components/LocationInfo'
+import MainContent from './components/MainContent'
 import ResidentCard from './components/ResidentCard'
 import useFetch from './hooks/useFetch'
 import getRandonLocation from './utils/getRandonLocation'
@@ -11,7 +12,7 @@ const App = () => {
 
 const [inputValue, setInputValue] = useState(getRandonLocation())
 const url=`https://rickandmortyapi.com/api/location/${inputValue}`
-const location=useFetch(url)
+const [location,hasError]=useFetch(url)
 const inputLocation=useRef()
 console.log(inputValue)
 
@@ -27,23 +28,12 @@ const handleSubmit=(event)=>{
         <form onSubmit={handleSubmit}>
             <input ref={inputLocation} type="text" />
             <button>Search</button>
-          </form>
-
-        <LocationInfo location={location} /> 
-        {/* Pinto de manera dinamica la info de cada url */}
-        {/* Va a ir url por url y llamara a la funtion que las pinta */}
-        <div>
-          { location?.residents.map(url=>( /*en url se vuwelca cada elemento iterado*/
-            <ResidentCard
-            key={url}
-            url={url} 
-            />
-          ))
-
-          }
-
-
-        </div>
+        </form>
+      {
+       hasError
+       ? <h2>❌❌ hey !!! You must provide a Id from 1 to 126 - 🐔Face of Chicken 🐔❌❌ </h2>
+       : <MainContent location={location}/>
+      }
     </div>
   )
 }
