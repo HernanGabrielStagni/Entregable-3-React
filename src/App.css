@@ -14,6 +14,7 @@ img{
   .app{
     background-color: rgb(75, 139, 61);
     min-height: 100vh;/*que crezca todo lo que quiera pero que como minimo tenga 100vh*/
+    margin-top: -23px;
 
   }
 
