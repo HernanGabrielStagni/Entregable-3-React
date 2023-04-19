@@ -7,6 +7,9 @@ img{
   width: 100%;
   box-shadow: 1em 1em  .5em .3em rgba(41, 40, 40, 0.662);
   height: 150px;
+  max-width: 1024px;
+  margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -16,6 +19,7 @@ img{
     background-color: rgb(75, 139, 61);
     min-height: 100vh;/*que crezca todo lo que quiera pero que como minimo tenga 100vh*/
     margin-top: -28px;
+    
 
   }
 
