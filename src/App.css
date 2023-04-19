@@ -5,7 +5,7 @@
 img{
   display: block;
   width: 200px;
-  box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 1em 1em  .5em .3em rgba(41, 40, 40, 0.662);
 }
 
 
@@ -14,22 +14,21 @@ img{
   .app{
     background-color: rgb(75, 139, 61);
     min-height: 100vh;/*que crezca todo lo que quiera pero que como minimo tenga 100vh*/
-    margin-top: -23px;
+    margin-top: -2px;
 
   }
 
   .app__title{
+    font-size: 5rem;
 text-align: center;
-padding-top: 1em;
+padding-top: 1.5em;
 margin-bottom: 1.5em;
 text-shadow: 2px 3px  5px rgb(0, 0, 0);
 
   }
 
   Content__banner{
-    
-    box-shadow: 3px 3px 3px 5px red;
-    box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.3);
+   
     }
 
 

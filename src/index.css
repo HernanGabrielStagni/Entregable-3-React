@@ -28,7 +28,8 @@ input{
  img{
   display: block; /*porque suele haber un espacio debajo de las imagenes que no queremos*/
   width: 100%;/*para que ocupe todo el ancho del contenedor*/
- }
+height: 350px; 
+}
 
  button{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*buscar una fuente apropiada*/
