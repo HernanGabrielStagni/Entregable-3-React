@@ -28,7 +28,7 @@ input{
  img{
   display: block; /*porque suele haber un espacio debajo de las imagenes que no queremos*/
   width: 100%;/*para que ocupe todo el ancho del contenedor*/
-height: 350px; 
+ 
 }
 
  button{

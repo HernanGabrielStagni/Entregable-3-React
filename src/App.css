@@ -4,8 +4,9 @@
 }
 img{
   display: block;
-  width: 200px;
+  width: 100%;
   box-shadow: 1em 1em  .5em .3em rgba(41, 40, 40, 0.662);
+  height: 150px;
 }
 
 
@@ -14,12 +15,12 @@ img{
   .app{
     background-color: rgb(75, 139, 61);
     min-height: 100vh;/*que crezca todo lo que quiera pero que como minimo tenga 100vh*/
-    margin-top: -2px;
+    margin-top: -25px;
 
   }
 
   .app__title{
-    font-size: 5rem;
+    font-size: 2.5rem;
 text-align: center;
 padding-top: 1.5em;
 margin-bottom: 1.5em;
@@ -28,7 +29,7 @@ text-shadow: 2px 3px  5px rgb(0, 0, 0);
   }
 
   Content__banner{
-   
+ 
     }
 
 
