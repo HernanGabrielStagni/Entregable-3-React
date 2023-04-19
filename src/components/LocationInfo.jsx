@@ -1,17 +1,27 @@
-import React from 'react'
-
-const LocationInfo = ({location}) => { //recibo y destructuro la props
+import React from "react";
+import "./styles/locationInfo.css";
+const LocationInfo = ({ location }) => {
+  //recibo y destructuro la props
   return (
-   <article>
-      <h2>{location?.name}</h2>
+    <article className="location">
+      <h2 className="location__name">{location?.name}</h2>
 
-      <ul>
-        <li><span>Type</span>{location?.type}</li>
-        <li><span>Dimention</span>{location?.dimension}</li>
-        <li><span>Population</span>{location?.residents.length}</li>
+      <ul className="location__list">
+        <li className="location__item">
+          <span className="location__label">Type</span>
+          {location?.type}
+        </li>
+        <li className="location__item">
+          <span className="location__label">Dimention</span>
+          {location?.dimension}
+        </li>
+        <li className="location__item">
+          <span className="location__label">Population</span>
+          {location?.residents.length}
+        </li>
       </ul>
-   </article>
-  )
-}
+    </article>
+  );
+};
 
-export default LocationInfo
+export default LocationInfo;

@@ -1,0 +1,315 @@
+
+*{
+  box-sizing: border-box;
+  margin: 0%;
+}
+
+ body{
+  margin: 0;
+  padding: 0;
+ 
+
+}
+
+/**/
+h1,h2,h3,h4, p {
+  margin: 0;
+  margin-top: 0px;
+  margin-bottom: 0px; 
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+
+  }
+
+/**/
+.app{
+  height: 100vh;
+  background-size: cover; 
+  background-position: center;
+  padding: 0rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 700PX;
+  margin: auto;
+  box-sizing: border-box;
+  } 
+
+
+/**/
+.loading img{
+  display: block;
+  width: 100%;
+ 
+}
+
+/**/
+.loading {
+  /* background-color: red; */
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.3);
+  justify-content: center;
+  align-items: center;
+}
+
+
+.container{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  max-width: 700PX;
+  margin: auto;
+  height: 90vh;
+
+}
+
+
+
+ 
+
+/**/
+ .card {
+  background-color: rgba(148, 145, 145, 0.702); 
+  height: 80%;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.3);
+ 
+  padding:.5rem;
+  /* width:80%; */
+  margin: auto ;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+ /* justify-content:space-between; */
+  align-content: center;
+  gap: 1rem;
+  max-width: 500PX;
+ }
+ /**/
+ .card__titles{
+  /* background-color: rgb(151, 240, 141);   */
+  font-size: .5rem;
+  overflow: hidden;
+  text-align: center;
+  margin-top: 0%;
+  padding: 1.rem; 
+}
+
+
+
+.container h1 span{
+  font-size: 130%;
+  color: rgb(206, 135, 13);
+
+}
+/*Titulo " WEATHER app" */
+.container h1,h4 {
+ margin-top: 5%;
+  color: rgb(216, 107, 5);
+  text-shadow: 2px 3px  5px rgb(0, 0, 0);
+  font-size:200%;
+  font-weight: 2px;
+}
+
+.container h4{
+  margin-top: 0%;
+  color: rgb(216, 107, 5);
+  text-shadow: 2px 3px  5px rgb(0, 0, 0);
+  font-size:150%;
+  font-weight: 2px;
+
+}
+
+/*Titulo "Localidad "Rio Cuarto" y pais" */
+.card__titles h2{
+ 
+ margin-top: 0%;
+  color: rgb(13, 13, 14);
+  text-shadow: 1px 1px  3PX  rgb(0, 0, 0);
+  font-size:280%;
+  font-weight: 2px;
+}
+  
+ /* Contenedor logo clima-Temperatura+ Info */
+.card__body {
+    /* height: 100%; */
+    /* background-color: rgba(140, 138, 138, 0.607); */
+    display: flex;
+    flex-direction: column;
+        
+  }
+
+   /* Contenedor logo clima-Temperatura*/
+
+  .card__body--icon-temp{
+  padding: 0 1rem;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content:space-between;
+  gap: 1rem 0;
+
+
+}
+
+
+  /* div logo + clima */
+.card__body--icon-temp div {
+  /* width: 50%; */
+  /* background-color: blueviolet; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+
+  /* contenedor temperatura + boton */
+.card__body--icon-temp footer{
+  padding: 2rem 1rem;
+  /* background-color: rgb(16, 165, 46); */
+
+
+}
+
+
+  /* Imagen sola logo clima */
+  .card__body--icon-temp img{
+    /* background-color: rgba(0, 0, 255, 0.439);  */
+    /* max-width: 100px;
+    /* margin-top: 20px; */
+    width: 60%;
+   
+
+    
+
+  }
+
+  /* Titulo de la temperatura 24.8 °C- Numeros*/
+  .card__body h2{
+    margin-top: 30px;
+   color: rgb(219, 110, 43);
+   font-size: 180%;
+   text-shadow: 2PX 2PX 3px rgb(0, 0, 0);
+  }
+
+/*Propiedades del boton*/
+  button{
+    width: 90px;
+  font-size: 75%;
+  font-weight: bold;
+  color: rgb(252, 31, 31);
+  padding: 5px;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;   
+  box-shadow: 2PX 2PX 3px rgba(0, 0, 0, 0.3);
+  border-bottom: none;
+  margin-top: 25px;
+ }
+
+
+ /* Estado del tiempo-Titulo debajo logo*/
+ .card__body--icon-temp h3{
+  color: rgba(241, 120, 27, 0.942);
+  font-size: 150%;
+  text-shadow: 2PX 2PX 3px rgb(0, 0, 0);
+  margin-bottom: 1rem;
+ }
+
+ /* INFORMACION DEL CLIMA*/
+  .card__body-info {
+   /* background-color: red; */
+
+    display: flex;
+    justify-content: center;
+   
+   
+  }
+  
+ 
+  /*parametros infodel tiempo*/
+  .card__body article ul {
+    list-style: none;
+    margin: 0;
+    padding: 1rem;
+    font-size: 120%;
+    
+
+  }
+
+  .card__body article span{
+  /* font-weight: 1x; */
+  text-shadow: 1PX 1PX 1px rgb(0, 0, 0);
+
+  }
+
+/**************************************************************/
+/********************************************/
+/********************************************/
+/********************************************/
+/********************************************/
+/********************************************/
+/********************************************/
+@media (min-width: 700px)  {
+   
+   
+  .App{
+     
+      gap: .5rem;
+      justify-content: center ;
+      max-width: 1024; 
+      
+  }
+
+  .container{
+   
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    max-width: 1024PX;
+    margin: auto;
+  }
+ 
+  
+    /**/
+   .card {
+    background-color: rgba(144, 141, 141, 0.609); 
+    padding:.5rem;
+    /* width:80%; */
+    margin: auto ;
+    margin-top: 1rem;
+    gap: 1rem;
+    max-width: 500PX;
+    max-height: 500px;
+   }
+
+ /* Titulo de la temperatura- Numeros*/
+ .card__body h2{
+  margin-top: 30px;
+ color: rgb(241, 133, 10);
+ font-size: 250%;
+ text-shadow: 2PX 2PX 3px rgb(0, 0, 0);
+}
+
+/*Propiedades del boton*/
+button{
+  width: 150px;
+font-size: 75%;
+font-weight: bold;
+color: rgb(213, 43, 43);
+padding: 5px;
+border: 1px solid var(--primary-color);
+border-radius: 5px;   
+box-shadow: 2PX 2PX 3px rgba(0, 0, 0, 0.3);
+border-bottom: none;
+margin-top: 25px;
+}
+
+
+}

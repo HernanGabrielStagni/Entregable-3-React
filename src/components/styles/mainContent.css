@@ -1,0 +1,7 @@
+.resident-contaner{
+   display: flex;/*hacemos que se ubiquen dinamicamente una junto a la otra*/
+   flex-wrap: wrap;/*hacemos que si no entran se pasen debajo*/
+   gap: 3em;/*damos espacio entre tarjetas*/
+   justify-content: center;/*el conjunto de elementos (tarjetas) se centran dentro del contenedor*/ 
+   
+}

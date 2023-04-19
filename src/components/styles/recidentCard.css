@@ -1,0 +1,155 @@
+.resident{
+    
+max-width: 320px;
+border-radius: .8em;
+background-color: rgb(13, 13, 13);
+overflow:hidden ;
+box-shadow: .3em .5em  .2em .3em rgba(41, 40, 40, 0.662);
+}
+
+.resident:hover {
+    transform: scale(1.05em);
+
+}
+
+.resident__header{
+position: relative;
+}
+
+
+.resident__avatar{
+    box-shadow: .3em .5em  .2em .3em rgba(41, 40, 40, 0.662);
+}
+
+/*contenedor del status*/
+.resident_status{
+    background-color: rgb(55, 53, 55);
+    position: absolute;
+    top:15%;
+    width: 35%;
+    padding: .3em 0 .3em 0.5em;
+    border-radius:0 .5em .5em 0;
+    box-shadow: 1px 1px  2px 0px rgb(172, 168, 168);
+
+    display: flex;
+    gap: .5em;
+    align-items: center; /*por defecto es strech y estira el circulo*/
+
+    
+}
+
+/*indicador del status*/
+.resident__status-circle{
+    width: 15px;
+    aspect-ratio: 1;/*establece proporcion entre el alto y el ancho */
+    background-color: rgb(160, 159, 158);
+    border-radius: 50%;/*redondeado perfecto*/
+    /* border: 2px solid white; */
+    box-shadow: 0px 0px  6px 1px rgba(255, 255, 255, 0.834);
+
+}
+
+
+
+.resident__status-label{
+    color: white;
+    letter-spacing:1px;
+
+}
+
+/*vamos a crear dos clases en funcion del status que viene de la API*/
+/*en la etiqueta le colocaremos una clase con el nombre variable segun el status que venga de la API (debe ser igual a como viene)*/
+
+/* a la etiqueta le voy a agregar {} para meterle la logica*/
+/*   <div className={`resident__status-circle ${resident?.status}`}></div>  */
+
+/*  tambien se podria hacer con class list y style pero esto es muy sencillo porque se corremponden con los nombres*/
+.Alive{
+background-color: green;
+}
+
+.Dead{
+    background-color: red;
+   
+}
+
+  
+
+
+.resident__body{
+padding: 1.4em 1.2em 2em;
+color: white;
+
+}
+
+
+.resident__name{
+text-align: center;
+font-size: 1.1rem;
+margin-bottom: .5em;
+}
+
+/*en la linea separadora y se trabaja como un borde*/
+.hr{ /* linea separadora*/
+border-color: rgb(67, 59, 59);
+opacity: .9;
+}
+
+
+.resident__list{
+    display: grid; /*flex los pone en fila, grid no y nos permite usar los comandos flex*/
+    gap: 1em; /*nos separo los renglones*/
+}
+
+/*propiedad y valor, estan de lado y lo pasamos a columna y */
+.resident__item{
+   display: grid;
+   flex-direction: column;
+   gap: .2em;
+}
+
+
+.resident__label{
+   padding-left: 1em;
+   font-size: .9rem;
+    color: #aaa;
+    font-weight: 300; 
+
+}
+
+
+.resident__value{
+
+}
+
+
+.resident__item{
+
+}
+
+
+.resident__label{
+
+}
+
+
+.resident__value{
+
+}
+
+
+.resident__item{
+
+}
+
+
+.resident__label{
+
+}
+
+
+.resident__value{
+ 
+    
+
+}
