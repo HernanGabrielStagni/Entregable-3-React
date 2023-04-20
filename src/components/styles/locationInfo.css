@@ -7,6 +7,7 @@ max-width: 600px;/*para que no crezca mas de 600 pixeles. no hace falta que siga
 margin-left: auto; /*como no esta dentro de un contenedor flex la damos a derecha e izquierda margen auto*/
 margin-right: auto;
 box-shadow: .3em .5em  .2em .3em rgba(41, 40, 40, 0.662);
+width: 90%;
 }
 
 .location__name{
