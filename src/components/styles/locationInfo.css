@@ -1,5 +1,5 @@
 .location{
-padding: 2em;
+padding: 1em;
 border-radius: .5em;
 background-color: black;
 margin-bottom: 3em;
@@ -18,7 +18,7 @@ color: rgb(125 198 12);
 
 
 .location__list{
-
+margin: 0 25px;
     display: flex;/*los pone uno junto al otro*/
     gap:1em;/*separa los textos*/
     justify-content:space-around;/*para que se distribuyan los espacios de las mismas medidas*/
