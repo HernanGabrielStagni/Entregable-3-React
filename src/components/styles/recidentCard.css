@@ -8,7 +8,9 @@ box-shadow: .3em .5em  .2em .3em rgba(41, 40, 40, 0.662);
 }
 
 .resident:hover {
-    transform: scale(1.05em);
+   
+    transform:scale(1.5px);
+    background-color: brown;
 
 }
 
@@ -19,8 +21,12 @@ position: relative;
 
 .resident__avatar{
     box-shadow: .3em .5em  .2em .3em rgba(41, 40, 40, 0.662);
+    
 }
-
+.resident__avatar:hover{
+    box-shadow: .3em .5em  .2em .3em rgba(41, 40, 40, 0.662);
+  
+}
 /*contenedor del status*/
 .resident_status{
     background-color: rgb(55, 53, 55);

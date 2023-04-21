@@ -11,7 +11,7 @@ import { useState } from 'react'
 const App = () => {
 
 const [inputValue, setInputValue] = useState(getRandonLocation())
-const url=`https://rickandmortyapi.com/api/location/${inputValue}`
+const url=`https://rickandmortyapi.com/api/location/${inputValue || 5000}`
 const [location,hasError]=useFetch(url)
 const inputLocation=useRef()
 console.log(inputValue)
