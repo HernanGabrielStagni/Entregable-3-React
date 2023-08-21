@@ -71,7 +71,7 @@
 
 
 .input-button{
-
+font-size: 1rem;
 padding: 2em;
 display: flex;
 justify-content: center;
@@ -81,6 +81,9 @@ align-content: center;
 
 
 .app__input {
+  /* background-color: rebeccapurple; */
+  padding: .5em;
+  font-size: 1.2rem;
   align-content: center;
   border-radius: 0.5em 0 0 0.5em;
   border: 0;
@@ -91,7 +94,8 @@ align-content: center;
 .app__btn {
   border-radius: 0 0.5em 0.5em 0;
   border: 0;
-  padding: 0 1em;
+  font-size: 1.2rem;
+  padding: 0 .5em;
   background-color: rgb(138, 221, 12);
   color: white;
   box-shadow: 0.3em 0.5em 0.2em 0.1em rgba(41, 40, 40, 0.662);
