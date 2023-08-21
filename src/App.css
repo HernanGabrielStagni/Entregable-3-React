@@ -55,35 +55,36 @@
   position: absolute;
   width: 180px;
   top: 55px;
-  
   left: 28%;
-  
-} */
+} 
+
 
 .app__form{
- 
-  margin-top: 4em;
-  padding: 2em;
-  display: flex;
- margin-right: 50px;
 
+display: flex;
+justify-content: center;
+text-align: center;
+background-color: rgb(83, 153, 51);
 }
 
 
 .input-button{
-font-size: 1rem;
+background-color: red;
+font-size: .5rem;
 padding: 2em;
+
 display: flex;
 justify-content: center;
 align-content: center;
+width: 80%;
 }
 
 
 
 .app__input {
-  /* background-color: rebeccapurple; */
+  background-color: rebeccapurple;
   padding: .5em;
-  font-size: 1.2rem;
+  font-size: 1.rem;
   align-content: center;
   border-radius: 0.5em 0 0 0.5em;
   border: 0;
@@ -93,9 +94,9 @@ align-content: center;
 
 .app__btn {
   border-radius: 0 0.5em 0.5em 0;
-  border: 0;
+ border: transparent;
   font-size: 1.2rem;
-  padding: 0 .5em;
+  padding: 0 0.5em;
   background-color: rgb(138, 221, 12);
   color: white;
   box-shadow: 0.3em 0.5em 0.2em 0.1em rgba(41, 40, 40, 0.662);
