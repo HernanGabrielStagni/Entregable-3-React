@@ -24,9 +24,11 @@ const App = () => {
       <div className="app__banner">
        
         <section className="container__header">
-          <img className="img1" src="/img/portalcompleto.png" alt="" />
+          {/* <img className="img1" src="/img/portalcompleto.png" alt="" /> */}
+          
+          <img className="img1" src="/public/img/portal bajado entero con texto.png" alt="" />
           <img className="img2" src="/img/Ellipse.png" alt="" />
-          <img className="img3" src="/img/logo.png" alt="" />
+          {/* <img className="img3" src="/img/logo.png" alt="" /> */}
         </section>
        
         <form className="app__form" onSubmit={handleSubmit}>

@@ -39,11 +39,15 @@
   padding: 2;
   position: relative;
   /* height: 150px; */
+  display: flex;
+  justify-content: center;
 }
 
 .img1{
   /* position: absolute; */
+  width: 50%;
  margin-top:-20%;
+ z-index: 10;
 }
 
 .img2{
@@ -80,35 +84,46 @@ justify-content: center;
 align-content: center;
 flex-wrap: wrap;
 width: 100%;
+z-index: 10;
+margin-bottom: 1em;
+
 }
 
 
 
 .app__input {
   background-color: rgb(53, 63, 54);
-
   font-weight: 600;
   padding: .5em;
   font-size: .8rem;
   align-content: center;
   border-radius: 0.5em 0 0 0.5em;
-
   border: 0;
-  box-shadow: 0.3em 0.5em 0.2em 0.1em rgba(41, 40, 40, 0.662);
-  /* margin-right: 50px; */
+  box-shadow: 0.3em 0.5em 0.2em 0.05em rgba(41, 40, 40, 0.662);
+  cursor: pointer;
   color: rgb(249, 252, 249);
 }
+.app__input:focus {
+  background-color: rgb(247, 248, 244);
+  color: black;
+}
+
 
 .app__btn {
   border-radius: 0 0.5em 0.5em 0;
   /* border: transparent; */
   font-size: 1rem;
   padding: 0 0.5em;
-  background-color: rgb(93, 134, 32);
+  background-color: rgb(85, 131, 17);
   color: white;
-  box-shadow: 0.3em 0.5em 0.2em 0.1em rgba(41, 40, 40, 0.662);
+  box-shadow: 0.3em 0.5em 0.2em 0.02em rgba(41, 40, 40, 0.662);
+  cursor: pointer;
 }
 
+.app__btn:hover{
+   background-color: rgb(165, 236, 58);
+   color: black;
+}
 
 
 
