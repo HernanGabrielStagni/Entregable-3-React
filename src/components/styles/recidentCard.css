@@ -4,7 +4,10 @@ max-width: 320px;
 border-radius: .8em;
 background-color: rgb(13, 13, 13);
 overflow:hidden ;
-box-shadow: .3em .5em  .2em .3em rgba(41, 40, 40, 0.662);
+box-shadow: 3px 3px  3px 3px rgba(175, 173, 173, 0.662);
+margin-bottom: 28px;
+display: flex;
+flex-direction: column;
 }
 
 .resident:hover {
@@ -30,14 +33,17 @@ position: relative;
 /*contenedor del status*/
 .resident_status{
     background-color: rgb(55, 53, 55);
-    position: absolute;
-    top:15%;
+    bottom:5%;
     width: 35%;
+    position: absolute;
+    left: 50%;
+    translate:-50%;
     padding: .3em 0 .3em 0.5em;
-    border-radius:0 .5em .5em 0;
+    border-radius:0.5em 0.5em 0.5em 0.5em;
     box-shadow: 1px 1px  2px 0px rgb(172, 168, 168);
 
     display: flex;
+    justify-content: center;
     gap: .5em;
     align-items: center; /*por defecto es strech y estira el circulo*/
 
@@ -51,10 +57,18 @@ position: relative;
     background-color: rgb(160, 159, 158);
     border-radius: 50%;/*redondeado perfecto*/
     /* border: 2px solid white; */
-    box-shadow: 0px 0px  6px 1px rgba(255, 255, 255, 0.834);
-
+    box-shadow: 0px 0px  6px 5px rgba(255, 255, 255, 0.834);
+    position: relative;
+    animation: brillo 2s linear infinite;
 }
-
+@keyframes brillo {
+    0% {
+      box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.8);
+    }
+    100% {
+      box-shadow: 0 0 0 5px rgba(255, 255, 255, 0);
+    }
+  }
 
 
 .resident__status-label{
@@ -109,23 +123,27 @@ opacity: .9;
 
 /*propiedad y valor, estan de lado y lo pasamos a columna y */
 .resident__item{
-   display: grid;
-   flex-direction: column;
-   gap: .2em;
+    display: grid;
+    grid-template-columns: .5fr 1fr; /* Divide el espacio en dos columnas */
+    gap: 10px; 
+    align-items:center; 
+  
 }
 
 
 .resident__label{
-   padding-left: 1.4em;
+  
    font-size: .9rem;
     color: #aaa;
     font-weight: 300; 
+   text-align: left;
 
 }
 
 
 .resident__value{
-
+    padding-left: 1.4em;
+    text-align: left;
 }
 
 
