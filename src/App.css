@@ -21,9 +21,11 @@
 
   min-height: 100vh; /*que crezca todo lo que quiera pero que como minimo tenga 100vh*/
   margin-top: -28px;
+
   display: flex;
   flex-direction: column;
   gap: .5em;
+
 }
 
 .app__banner {
@@ -31,8 +33,13 @@
   /* background-size: 100%; */
   display: flex;
   flex-direction: column;
+
 }
 
+.app__error{
+  text-shadow: 1px 1px 5px rgba(245, 242, 242, 0.662);
+  margin: auto;
+}
 
 .container__header {
   /* background-color:rebeccapurple; */
@@ -110,10 +117,10 @@ margin-bottom: 1em;
 
 
 .app__btn {
-  border-radius: 0 0.5em 0.5em 0;
-  /* border: transparent; */
+  border-radius: 0 0.5em 0.5em 0 ;
+  border: transparent; 
   font-size: 1rem;
-  padding: 0 0.5em;
+  padding: 0.5em 0.5em;
   background-color: rgb(85, 131, 17);
   color: white;
   box-shadow: 0.3em 0.5em 0.2em 0.02em rgba(41, 40, 40, 0.662);
@@ -121,9 +128,16 @@ margin-bottom: 1em;
 }
 
 .app__btn:hover{
-   background-color: rgb(165, 236, 58);
-   color: black;
+   background-color: rgb(131, 181, 78);
+   color: rgb(47, 72, 8);;
 }
 
+@media (min-width:650px){
+  .app__btn:hover{
+    background-color: rgb(35, 47, 17);
+    color: rgb(46, 86, 15);
+ }
+}
+  
 
 

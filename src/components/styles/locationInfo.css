@@ -1,5 +1,3 @@
-
-
 /*CONTENEDOR GENERAL DE LA INFO DE LA LOCATION*/
 .location {
   border-radius: 0.5em;
@@ -12,35 +10,33 @@
   margin-right: auto;
   display: flex;
   flex-direction: column;
-  }
+}
 /*TITULO GRANDE DE LA LOCATION*/
 .location__name {
   text-align: center;
   color: rgb(176, 230, 95);
   /* background-color: aqua; */
   letter-spacing: 1.5px;
-  
 }
 
 /* CONTENEDOR GENERAL DE LA INFO DE LA LOCATION TYPE - DIMENNSION- pOPULATION */
 .location__list {
   /* background-color: rgb(153, 66, 51); */
   margin: 15px 25px;
-  
+
   display: flex; /*los pone uno junto al otro*/
-flex-direction: column;
-  gap: 1.5em;/*separa los textos*/
+  flex-direction: column;
+  gap: 1.5em; /*separa los textos*/
   justify-content: space-around; /*para que se distribuyan los espacios de las mismas medidas*/
 }
 
 /*TITULO O ETIQUET DE LA INFORMACION*/
 .location__label {
-    color: #81f165;
-    
-    font-weight: 500;
-    letter-spacing: 2px;
-  }
+  color: #81f165;
 
+  font-weight: 500;
+  letter-spacing: 2px;
+}
 
 /* INFORMACION DE LA LOCASION*/
 .location__item {
@@ -53,4 +49,14 @@ flex-direction: column;
   letter-spacing: 1px;
 }
 
+@media (min-width: 650px) {
+  .location__list {
+    /* background-color: rgb(153, 66, 51); */
+    margin: 15px 25px;
 
+    display: flex; /*los pone uno junto al otro*/
+    flex-direction: row;
+    gap: 1.5em; /*separa los textos*/
+    justify-content: space-around; /*para que se distribuyan los espacios de las mismas medidas*/
+  }
+}

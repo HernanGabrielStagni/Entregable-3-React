@@ -29,8 +29,8 @@ const ResidentCard = ({ url }) => {
             <span className="resident__value">{resident?.origin.name}</span>
           </li>
           <li className="resident__item">
-            <span className="resident__label">Eppisodes where appear</span>
-            <span className="resident__value">..{resident?.episode.length}</span>
+            <span className="resident__label">Times appear</span>
+            <span className="resident__value">{resident?.episode.length} time</span>
             
           </li>
         </ul>

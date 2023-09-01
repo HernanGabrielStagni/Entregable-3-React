@@ -26,7 +26,7 @@ const App = () => {
         <section className="container__header">
           {/* <img className="img1" src="/img/portalcompleto.png" alt="" /> */}
           
-          <img className="img1" src="/public/img/portal bajado entero con texto.png" alt="" />
+          <img className="img1" src="img/portal bajado entero con texto.png" alt="" />
           <img className="img2" src="/img/Ellipse.png" alt="" />
           {/* <img className="img3" src="/img/logo.png" alt="" /> */}
         </section>
@@ -47,8 +47,7 @@ const App = () => {
 
       {hasError ? (
         <h2 className="app__error">
-          ❌❌ hey !!! You must provide a Id from 1 to 126 - 🐔Face of Chicken
-          🐔❌❌{" "}
+          ❌ You must provide a number from 1 to 126 
         </h2>
       ) : (
         <MainContent location={location} />
