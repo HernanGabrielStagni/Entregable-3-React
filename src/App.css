@@ -37,7 +37,8 @@
 }
 
 .app__error{
-  text-shadow: 1px 1px 5px rgba(245, 242, 242, 0.662);
+  text-shadow: 1px 1px 8px rgba(245, 242, 242, 0.662);
+
   margin: auto;
 }
 
@@ -128,14 +129,15 @@ margin-bottom: 1em;
 }
 
 .app__btn:hover{
-   background-color: rgb(131, 181, 78);
-   color: rgb(47, 72, 8);;
+   background-color: rgb(95, 140, 46);
+   color: rgb(3, 3, 3);
+   scale: 1.05;
 }
 
 @media (min-width:650px){
   .app__btn:hover{
-    background-color: rgb(35, 47, 17);
-    color: rgb(46, 86, 15);
+    /* background-color: rgb(35, 47, 17);
+    color: rgb(46, 86, 15); */
  }
 }
   
